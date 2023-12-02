@@ -61,6 +61,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(/Background.png);
 }
 .contain{
     position: relative;
