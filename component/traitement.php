@@ -14,14 +14,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     echo "Veuillez sélectionner un sexe valide";
   }
-
   // Afficher les données dans une table HTML
-  echo "<table>";
-  echo "<tr><td>Nom</td><td>$nom</td></tr>";
-  echo "<tr><td>Prénom</td><td>$prenom</td></tr>";
-  echo "<tr><td>Email</td><td>$email</td></tr>";
-  echo "<tr><td>Sexe</td><td>$sexe</td></tr>";
-  echo "<tr><td>Option</td><td>$option</td></tr>";
-  echo "</table>";
+  echo "<table style='border-collapse: collapse;width: 100%;'>
+  <tr>
+      <th style='order: 1px solid black;padding: 8px;text-align: center;background-color: #f2f2f2;'>Nom</th>
+      <th style='order: 1px solid black;padding: 8px;text-align: center;background-color: #f2f2f2;'>Prenom</th>
+      <th style='order: 1px solid black;padding: 8px;text-align: center;background-color: #f2f2f2;'>Email</th>
+      <th style='order: 1px solid black;padding: 8px;text-align: center;background-color: #f2f2f2;'>Sexe</th>
+      <th style='order: 1px solid black;padding: 8px;text-align: center;background-color: #f2f2f2;'>Specialite</th>
+  </tr>
+  <tr style='border: 1px solid #ccc;'>
+      <td style='order: 1px solid black;padding: 8px;text-align: center;border: 1px solid #ccc;'>$nom</td>
+      <td style='order: 1px solid black;padding: 8px;text-align: center;border: 1px solid #ccc;'>$prenom</td>
+      <td style='order: 1px solid black;padding: 8px;text-align: center;border: 1px solid #ccc;'>$email</td>
+      <td style='order: 1px solid black;padding: 8px;text-align: center;border: 1px solid #ccc;'>$sexe</td>
+      <td style='order: 1px solid black;padding: 8px;text-align: center;border: 1px solid #ccc;'>$option</td>
+  </tr>
+</table>";
+  
+ 
 }
 ?>
